@@ -2,16 +2,38 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Задание №1");
+        int[] i = new int[3];
+        i[0] = 1;
+        i[1] = 2;
+        i[2] = 3;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        double[] d = {1.57, 7.654, 9.986};
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        int[] b = {2, 6, 8, 10, 15};
+
+        System.out.println("Задание №2");
+
+        System.out.println(i[0] + ", " + i[1] + ", " + i[2]);
+        System.out.println(d[0] + ", " + d[1] + ", " + d[2]);
+        System.out.print(b[0] + ", " + b[1] + ", " + b[2] + ", " + b[3] + ", " + b[4]);
+
+        System.out.println();
+
+        System.out.println("Задание №3");
+
+        System.out.println(i[2] + ", " + i[1] + ", " + i[0]);
+        System.out.println(d[2] + ", " + d[1] + ", " + d[0]);
+        System.out.print(b[4] + ", " + b[3] + ", " + b[2] + ", " + b[1] + ", " + b[0]);
+
+        System.out.println();
+
+        System.out.println("Задание №4");
+
+        for (int c = 0; c < i.length; c++)
+            if (i[c] % 2 != 0 ) {
+                i[c]++;
+                System.out.print(i[c]);
+            }
     }
 }
